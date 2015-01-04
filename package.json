@@ -1,0 +1,30 @@
+{
+  "name": "git-child",
+  "version": "1.0.0",
+  "description": "Node utility for running git commands",
+  "main": "./src",
+  "scripts": {
+    "test": "mocha test",
+    "commands": "node write-commands"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bendrucker/git-child.git"
+  },
+  "keywords": [
+    "git",
+    "wrapper",
+    "cli",
+    "child"
+  ],
+  "author": "Ben Drucker <bvdrucker@gmail.com> (http://bendrucker.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendrucker/git-child/issues"
+  },
+  "homepage": "https://github.com/bendrucker/git-child",
+  "dependencies": {
+    "argv-formatter": "~1.0.0",
+    "bluebird": "~2.5.3"
+  }
+}
