@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.10'
+deploy:
+  provider: npm
+  email: bvdrucker@gmail.com
+  api_key:
+    secure: DSAfxIQ56BCDZ/QfRJXWLsj6jNrofrCU8nrzGCO9JXEbS14H2hTuGsbm1dyblETYmM1tGUciXMuMy8zHiWFBUFX3NBpC0p5zuALYkyI6c8s76BxIUfbdSBxtMKkYod/idmp4BUTC8CldbKPDLyqTRQE27cUpB/d9c0KlI9DRUuk=
+  on:
+    tags: true
+    all_branches: true
+    repo: bendrucker/git-child

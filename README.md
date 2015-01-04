@@ -1,4 +1,4 @@
-git-child
+git-child [![Build Status](https://travis-ci.org/bendrucker/git-child.svg?branch=master)](https://travis-ci.org/bendrucker/git-child)
 =========
 
 Node utility for running `git` commands via the command line via [`child_process`](http://nodejs.org/api/child_process.html). 
