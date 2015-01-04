@@ -27,5 +27,12 @@
     "argv-formatter": "~1.0.0",
     "bluebird": "~2.5.3",
     "camelize": "~1.0.0"
+  },
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "chai-as-promised": "~4.1.1",
+    "mocha": "~2.1.0",
+    "sinon": "~1.12.2",
+    "sinon-chai": "~2.6.0"
   }
 }
