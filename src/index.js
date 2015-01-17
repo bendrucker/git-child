@@ -7,7 +7,10 @@ var camelize = require('camelize');
 
 exports.run = function (command, args, options) {
   options = options || {};
-  if (!Array.isArray(args)) {
+  if (typeof args === 'string') {
+    args = [args];
+  }
+  else if (!Array.isArray(args)) {
     args = args ? toArgv(args) : [];
   }
   var childArgs = ['git', [command].concat(args)];

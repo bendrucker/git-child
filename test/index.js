@@ -38,6 +38,11 @@ describe('git-child', function () {
     expect(child.execFile).to.have.been.calledWith('git', ['log']);
   });
 
+  it('can use an arg string', function () {
+    git.checkout('master');
+    expect(child.execFile).to.have.been.calledWith('git', ['checkout', 'master']);
+  });
+
   it('can resolve a spawn', function () {
     var spawn = {};
     child.spawn.returns(spawn);
