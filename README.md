@@ -13,7 +13,7 @@ $ npm install git-child
 
 ##### `git.run(command, args, options)` -> `promise`
 
-`git.run` is the low level command that controls creating a child process and returning its output from `stdout` as a promise. `command` is a git command, like `'log'`. `args` can be an `Array` of arguments to be passed to git (`git.run('log', ['-a'])`) or an object to be passed to [argv-formatter](https://github.com/bendrucker/argv-formatter) (`git.run('log', {a: true})`). If `options.spawn` is `true`, the promise will resolve the `ChildProcess` instance so you can manually interact with the stdio streams. Otherwise, it buffers `stdout` using `child_process.execFile` and resolves `stdout`. 
+`git.run` is the low level command that controls creating a child process and returning its output from `stdout` as a promise. `command` is a git command, like `'log'`. `args` can be an `Array` of arguments to be passed to git (`git.run('log', ['-a'])`) or an object to be passed to [argv-formatter](https://github.com/bendrucker/argv-formatter) (`git.run('log', {a: true})`). If `options.spawn` is `true`, the promise will resolve the `ChildProcess` instance so you can manually interact with the stdio streams. Otherwise, it buffers `stdout` using `child_process.execFile` and resolves `stdout`. `options` are passed along to the `child_process`.
 
 ### Git Commands
 

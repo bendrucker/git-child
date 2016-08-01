@@ -13,7 +13,7 @@ exports.run = function (command, args, options) {
   else if (!Array.isArray(args)) {
     args = args ? toArgv(args) : [];
   }
-  var childArgs = ['git', [command].concat(args)];
+  var childArgs = ['git', [command].concat(args), options];
   if (options.spawn) {
     return Promise.resolve(child.spawn.apply(child, childArgs));
   }

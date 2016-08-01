@@ -43,6 +43,12 @@ describe('git-child', function () {
     expect(child.execFile).to.have.been.calledWith('git', ['checkout', 'master']);
   });
 
+  it('can pass options', function () {
+    var options = {stdio: 'inherit'}
+    git.checkout(['master'], options);
+    expect(child.execFile).to.have.been.calledWith('git', ['checkout', 'master'], options);
+  });
+
   it('can resolve a spawn', function () {
     var spawn = {};
     child.spawn.returns(spawn);
