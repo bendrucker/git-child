@@ -1,4 +1,4 @@
-git-child [![Build Status](https://travis-ci.org/bendrucker/git-child.svg?branch=master)](https://travis-ci.org/bendrucker/git-child)
+git-child [![Build Status](https://travis-ci.org/bendrucker/git-child.svg?branch=master)](https://travis-ci.org/bendrucker/git-child) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/git-child.svg)](https://greenkeeper.io/)
 =========
 
 Node utility for running `git` commands via the command line via [`child_process`](http://nodejs.org/api/child_process.html). 
